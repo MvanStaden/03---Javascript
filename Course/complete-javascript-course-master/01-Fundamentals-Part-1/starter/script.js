@@ -289,3 +289,86 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀
 */
+
+// const dScore1 = 97;
+// const dScore2 = 112;
+// const dScore3 = 101;
+
+// const kScore1 = 109;
+// const kScore2 = 95;
+// const kScore3 = 106;
+
+// const dAverage = (dScore1 + dScore2 + dScore3) / 3;
+// const kAverage = (kScore1 + kScore2 + kScore3) / 3;
+
+// if (dAverage > kAverage) {
+//   console.log(`Dolphins wins with a score of ${dAverage}!!!🏆🏆🏆`);
+// } else if (dAverage < kAverage) {
+//   console.log(`Koalas wins with a score of ${kAverage}!!!🏆🏆🏆`);
+// } else {
+//   console.log(
+//     `Its a Draw!! Dolphins scored: ${dAverage} and Koalas scored: ${kAverage}`
+//   );
+// }
+
+// //Bonus 1
+// if (dAverage >= 100 && dAverage > kAverage) {
+//   console.log(`Dolphins wins with a score of ${dAverage}!!!🏆🏆`);
+// } else if (kAverage >= 100 && kAverage > dAverage) {
+//   console.log(`Koalas wins with a score of ${kAverage}!!!🏆🏆`);
+// } else if (dAverage === kAverage && dAverage >= 100 && kAverage >= 100) {
+//   console.log(
+//     `Its a Draw!! Dolphins scored: ${dAverage} and Koalas scored: ${kAverage}`
+//   );
+// } else {
+//   console.log(`Nor the Dolphins or the Koalas Won`);
+// }
+
+// //Bonus 2
+// if (dAverage && kAverage >= 100) {
+//   console.log(
+//     `Its a Draw!! Dolphins scored: ${dAverage}🏆 and Koalas scored: ${kAverage}🏆`
+//   );
+// } else if (dAverage < 100 || kAverage > 100) {
+//   console.log(`No Team won the 🏆🏆🏆`);
+// }
+
+/****************************Switch Statement******************/
+const day = prompt("Enter the day of the week");
+
+switch (day) {
+  case "Monday":
+    console.log("Today is Monday");
+    break;
+  case "Tuesday":
+    console.log("Today is Tuesday");
+    break;
+  case "Wednesday":
+  case "Thursday":
+    console.log("Today we have Zoom meetings");
+    break;
+  case "Friday":
+    console.log("Friday we practice all our work for the week");
+    break;
+  case "Saterday":
+  case "Sunday":
+    console.log("On the weekend we rest and think about the weeks work");
+    break;
+  default:
+    console.log("The day you enter does not exist.");
+    break;
+}
+
+if (day === "Monday") {
+  console.log("Today is Monday");
+} else if (day === "Tuesday") {
+  console.log("Today is Tuesday");
+} else if (day === "Wednesday" || day === "Thursday") {
+  console.log("Coding ChallengesTh");
+} else if (day === "Friday") {
+  console.log("Friday we practice all our work for the week");
+} else if (day === "Saterday" || day === "Sunday") {
+  console.log("On the weekend we rest and think about the weeks work");
+} else {
+  console.log("The day you enter does not exist.");
+}
